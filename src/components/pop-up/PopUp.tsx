@@ -14,7 +14,7 @@ export const PopUpCMP = ({ msg = 'msg', waypoint, desc = 'desc', img, closePopup
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>{msg}</h2>
-      <img src={img} alt="" />
+      <img className={styles.image} src={img} alt="" />
       <p className={styles.description}>{desc}</p>
       <button
         className={'button'}
@@ -23,6 +23,9 @@ export const PopUpCMP = ({ msg = 'msg', waypoint, desc = 'desc', img, closePopup
         }}
       >
         Продолжить
+      </button>
+      <button className={styles.minibutton}>
+        Выпустить карту ВТБ
       </button>
       <div onClick={() => closePopup(false)} className={styles.bottomText}>
         не нужно

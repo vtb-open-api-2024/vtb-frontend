@@ -57,6 +57,7 @@ export const PwdEntryPage = ({ handleLoggedByPassword, handleForgotPassword }: i
     <div className={'page one-way-page'}>
       <div className={styles.container}>
         <div className={styles.numpadWrapper}>
+          <h1 className={styles.header}></h1>
           <h2 className={styles.optionView}>{message}</h2>
 
           {/* Password squares */}

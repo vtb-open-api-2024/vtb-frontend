@@ -126,7 +126,7 @@ export const BuyCryptoPage = ({ waypoint = '/', spareWaypoint = '/' }: iBuyCrypt
     <div className={'page ' + styles.container}>
       <div className={styles.header}>
         <button onClick={() => moveTo(spareWaypoint)}>{'<'}</button>
-        Купить криптовалюту
+        Покупка
       </div>
       {/* slider for cards */}
       <div

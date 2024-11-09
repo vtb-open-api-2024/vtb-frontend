@@ -1,7 +1,8 @@
 .header {
   padding: 0px 20px;
-  margin-top: 40vh;
+  margin-top: 45vh;
   margin-bottom: 20px;
+  font-size: 24px;
 }
 
 .header span {
@@ -12,6 +13,8 @@
   padding: 0px 20px;
   margin: 0;
   margin-bottom: 50px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .paragraph span {
@@ -28,6 +31,7 @@
 
 .bottomText {
   font-size: 16px;
+  font-weight: 500;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -41,4 +45,10 @@
   font-size: 12px;
   font-weight: 400;
   margin-top: 5px;
+}
+
+.hero_page_bg {
+  background-image: url('../src/assets/heroPageBg.png');
+  background-repeat: no-repeat;
+  background-position: 30% 5%;
 }

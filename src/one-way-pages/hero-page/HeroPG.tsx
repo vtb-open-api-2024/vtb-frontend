@@ -7,11 +7,12 @@ interface iHeroPG {
   spareWaypoint: string | undefined;
 }
 
-export const HeroPG = ({ waypoint = '/', spareWaypoint = '/' }: iHeroPG) => {
+export const HeroPG = ({ waypoint = '/' }: iHeroPG) => {
   const moveTo = useNavigate();
 
   return (
-    <div className={'page one-way-page hero-page'}>
+    <div className={` hero-page`}>
+      <div className={`page one-way-page ${styles.hero_page_bg}`}>
       <h1 className={styles.header}>
         <span>Получите</span> доступ к&nbsp;криптовалютам
       </h1>
@@ -20,15 +21,15 @@ export const HeroPG = ({ waypoint = '/', spareWaypoint = '/' }: iHeroPG) => {
       </p>
       <button onClick={() => moveTo(waypoint)} className={'button ' + styles.herobutton}>
         Создать кошелек
-        <span className={styles.herobutton_span}>Или войти в существующий</span>
       </button>
       <div
         onClick={() => {
-          moveTo(spareWaypoint);
+          moveTo(waypoint);
         }}
         className={styles.bottomText}
       >
-        Привязать кошелек
+        Есть кошелек? Войти
+      </div>
       </div>
     </div>
   );

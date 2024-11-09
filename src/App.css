@@ -16,7 +16,7 @@
 }
 
 .hero-page {
-  background-image: url('../src/assets/heroPageBg.png');
+  background: linear-gradient(180deg, #000000 0%, #0047be);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -45,7 +45,7 @@
   text-align: center;
   width: 90%;
   padding: 18px 0px;
-  background: linear-gradient(135deg, rgba(40, 122, 244, 1) 0%, rgba(1, 59, 155, 1) 100%);
+  background: linear-gradient(180deg, #287AF4 0%, rgb(16 35 67) 95.5%)
 }
 
 button:active {

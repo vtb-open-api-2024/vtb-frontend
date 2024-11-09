@@ -219,7 +219,7 @@ function App() {
               msg={popUpData.msg}
               waypoint={popUpData.waypoint}
               desc={popUpData.desc}
-              img="https://www.vtb.ru/media-files/vtb.ru/sitepages/personal/karty/kreditnye/Vozmozhnostey_1x.png"
+              img={popUpData.img}
               closePopup={closePopup}
             />
           )}
@@ -245,7 +245,7 @@ function App() {
           <Route path="/exchange" element={<ExchangePage confirmExchange={handleConfirmOperation} />} />
           <Route
             path="/confirm"
-            element={<AuthPage waypoint="/transaction" spareWaypoint="/buy" authHandler={handleAuthCodeSubmit} />}
+            element={<PwdEntryPage handleLoggedByPassword={handleLoggedByPassword} handleForgotPassword={handleForgotPassword} />}
           />
           <Route path="/transaction" element={<TransActionPage waypoint="/home" />} />
           <Route path="/share-app" element={<ShareAppPG waypoint="/home" />} />
